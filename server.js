@@ -2,7 +2,7 @@ var firebase = require('firebase-admin');
 const express = require('express'); //ajuda com rotas e controllers
 const cors = require('cors');
 const app = express();
-
+const port = process.env.PORT || 3001;
 app.use(express.json());
 app.use(cors());
 
@@ -13,6 +13,6 @@ firebase.initializeApp({
 });
 
 app.use('/api', require("./src/routes")); // em qualquer requisição, va buscar no arquivo routes
-app.listen(3001);
+app.listen(port);
 
 

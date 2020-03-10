@@ -20,12 +20,12 @@ var readData = ({
     readData.dateRegister = new Date().toString();
     var ref = db.ref("umi");
     var lastData = ref.limitToLast(1);
-    lastData.once("child_added", function(snapshot){
+    lastData.on("child_added", function(snapshot){
         readData.umidade = snapshot.val();
     });
     var ref = db.ref("temp");
     lastData = ref.limitToLast(1);
-    lastData.once("child_added", function(snapshot){
+    lastData.on("child_added", function(snapshot){
         readData.temperature = snapshot.val();
     });
         return readData;

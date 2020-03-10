@@ -17,14 +17,12 @@
     "firebase": "7.10.0",
     "firebase-admin": "^8.9.2",
     "mongoose": "^5.9.3",
-    "require-dir": "^1.2.0",
-    "socket.io": "^2.3.0",
-    "ws": "^7.2.3"
+    "require-dir": "^1.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
   },
-  "engines": {
+  "engines":{
     "node": "8.17.0"
   }
 }

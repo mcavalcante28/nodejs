@@ -1,6 +1,9 @@
 var firebase = require('firebase-admin');
 const express = require('express'); //ajuda com rotas e controllers
 const cors = require('cors');
+
+
+
 const app = express();
 const port = process.env.PORT || 3001;
 app.use(express.json());
